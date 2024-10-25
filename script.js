@@ -33,23 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
     });
-
-    // Function to change background color dynamically
-    const container = document.querySelector('.container');
-    const button = document.querySelector('button');
-
-    const colors = ['#f0f8ff', '#ffe4e1', '#f5f5f5', '#f7f7f7', '#faf0e6'];
-    const buttonColors = ['#28a745', '#007bff', '#ffc107', '#dc3545', '#17a2b8'];
-
-    let colorIndex = 0;
-
-    setInterval(() => {
-        // Change container background color
-        container.style.backgroundColor = colors[colorIndex];
-
-        // Change button background color
-        button.style.backgroundColor = buttonColors[colorIndex];
-
-        colorIndex = (colorIndex + 1) % colors.length;
-    }, 2000); // Change every 2 seconds
 });
